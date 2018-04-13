@@ -1,0 +1,41 @@
+{
+  "welcomeFile": "/webapp/index.html",
+  "routes": [
+    {
+      "path": "/resources",
+      "target": {
+        "type": "service",
+        "name": "sapui5",
+        "entryPath": "/resources"
+      },
+      "description": "SAPUI5 Resources"
+    },
+    {
+      "path": "/test-resources",
+      "target": {
+        "type": "service",
+        "name": "sapui5",
+        "entryPath": "/test-resources"
+      },
+      "description": "SAPUI5 Test Resources"
+    },
+    {
+      "path": "/application/services/",
+      "target": {
+        "type": "destination",
+        "name": "EmployeesList",
+        "entryPath": "/application/services/"
+      },
+      "description": "List of the employees at HT"
+    },
+    {
+      "path": "/EmployeesList",
+      "target": {
+        "type": "destination",
+        "name": "EmployeesList"
+      },
+      "description": "List of the employees at HT"
+    }
+  ],
+  "sendWelcomeFileRedirect": true
+}

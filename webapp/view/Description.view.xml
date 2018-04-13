@@ -1,0 +1,84 @@
+<mvc:View 
+	controllerName="Application.controller.Description" 
+	xmlns:html="http://www.w3.org/1999/xhtml" 
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m">
+	<Page title="{i18n>descriptionPageTitle}" showNavButton="true" navButtonPress="onNavBack">
+	<Table
+		id="table"
+		class = "sapUiResponsiveMargin"
+		width = "auto"
+		items = "{ 
+				path : 'employeem>/saldescription',
+				sorter: {
+					path: 'NAME',
+					group: false
+					}
+					}">
+		
+		<headerToolbar>
+			<Toolbar>
+				<Title  id="title" text="{i18n>descriptionTable}"  />
+					<ToolbarSpacer/>
+					<SearchField width="50%" id="search" search="onFilterEmployees"/>
+			</Toolbar>
+		</headerToolbar>
+		
+		<columns>
+			<Column
+				hAlign="Begin"
+				minScreenWidth="Small"
+				demandPopin="true">
+				<Text text="{i18n>columnName}"/>
+			</Column>
+			<Column hAlign="Center">
+				
+				<Text text="{i18n>columnTeam}"/>
+			</Column>
+			<Column
+				hAlign="Center"
+				minScreenWidth="Small"
+				demandPopin="true">
+				<Text text="{i18n>columnPost}"/>
+			</Column>
+			<Column
+				hAlign="Center"
+				minScreenWidth="Tablet"
+				demandPopin="false">
+				<Text text="{i18n>columnSalary}"/>
+			</Column>
+			<Column
+				hAlign="Center"
+				minScreenWidth="Tablet"
+				demandPopin="false">
+				<Text text="{i18n>columnBonus}"/>
+			</Column>
+			<Column
+				hAlign="Center">
+				<Text text="{i18n>columnTotalIncome}"/>
+			</Column>	
+			</columns>
+			<items>
+			<ColumnListItem>
+				<cells>
+					<ObjectIdentifier title="{employeem>NAME}" />
+					<ObjectIdentifier title="{employeem>TEAM}"/>
+					<ObjectIdentifier title="{employeem>POST}" />
+					<ObjectNumber number="{employeem>SALARY}" emphasized="false"/>
+					<ObjectNumber number="{employeem>BONUS}" emphasized="false"/>
+					<ObjectNumber number="{employeem>Total_income}" emphasized="false"/>
+					<!--<ObjectNumber-->
+					<!--			number="{-->
+					<!--				parts: [{path: 'employeem>SALARY'}, {path: 'view>/currency'}],-->
+					<!--				type:'sap.ui.model.type.Currency',-->
+					<!--				formatOptions:{-->
+					<!--					showMeasure: false-->
+					<!--					}-->
+					<!--			}"-->
+					<!--			unit="{view>/currency}"/>-->
+						</cells>
+					</ColumnListItem>
+				</items>
+			</Table>
+			</Page>
+	</mvc:View>

@@ -1,0 +1,12 @@
+<mvc:View controllerName="Application.controller.Chart" 
+		  xmlns:html="http://www.w3.org/1999/xhtml" 
+		  xmlns:mvc="sap.ui.core.mvc" 
+		  displayBlock="true"
+		  xmlns:viz="sap.viz.ui5.controls"
+		  xmlns="sap.m">
+			<Page title="Graphical Representation" showNavButton="true" navButtonPress="onNavBack">
+				<content>
+					<viz:VizFrame xmlns="sap.viz" id="idcolumn" width="100%"/>
+				</content>
+			</Page>
+</mvc:View>

@@ -1,0 +1,22 @@
+<mvc:View 
+	controllerName="Application.controller.Home" 
+	xmlns:html="http://www.w3.org/1999/xhtml" 
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:core="sap.ui.core"
+	xmlns="sap.m">
+		<Page title = "{i18n>homeTitle}">
+			<content>
+				<!--<ComboBox items="{/items}" selectedKey="key1"  selectionChange="onpress"  selectedItem="BindingMySelectedItem">-->
+				<!--	<items>-->
+				<!--		<core:Item key="{key}" text="{text}" />-->
+							<!--<core:ListItem text="{i18n>iWantToNavigate}" id="come1" key="firstKey1" press="showList" class="sapUiTinyMarginEnd"/>-->
+							<!--<core:ListItem text="{i18n>iWantToNavigatetoDescription}" id="come2"  key="secondKey2" press="showDescription" class="sapUiTinyMarginEnd"/>-->
+							<!--<core:ListItem text="{i18n>iWantToNavigatetoChart}" key="thirdKey3" id="come3" press="showChart" class="sapUiTinyMarginEnd"/>-->
+				<!--	</items>-->
+				<!--</ComboBox>-->
+				<Button text="{i18n>iWantToNavigate}" press="showList"  />
+				<Button text="{i18n>iWantToNavigatetoDescription}" press="showDescription"  />
+				<Button text="{i18n>iWantToNavigatetoChart}" press="showChart"  />
+			</content>
+		</Page>
+</mvc:View>

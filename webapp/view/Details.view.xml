@@ -1,0 +1,60 @@
+<mvc:View 
+	controllerName="Application.controller.Details" 
+	xmlns:html="http://www.w3.org/1999/xhtml" 
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:f="sap.ui.layout.form"
+	busyIndicatorDelay="0"
+	xmlns="sap.m">
+	
+	 <Page
+		id="employeePage"
+		title="{i18n>employeeDetailsOf} {employeem>FIRSTNAME} {employeem>LASTNAME} "
+		showNavButton="true"
+		navButtonPress="onNavBack"
+		class="sapUiResponsiveContentPadding">
+	 	
+		<content>
+			<Panel
+				id="employeePanel"
+				width="auto"
+				class="sapUiNoContentPadding">
+				<headerToolbar>
+					<Toolbar>
+						<Title text="{i18n>employeeIDColon} {employeem>EMPLOYEEID}" />
+						<ToolbarSpacer />
+						<!--<Link text="Resume of {employeem>FIRSTNAME}" tooltip="{i18n>FlipToResume.tooltip}" press="onShowResume" />-->
+					</Toolbar>
+				</headerToolbar>
+				<content>
+					<f:SimpleForm
+						id="detailform"
+						editable="false"
+						layout="ResponsiveGridLayout"
+						labelSpanL="3" 
+						labelSpanM="3" 
+						emptySpanL="4" 
+						emptySpanM="4"
+						columnsL="1" 
+						columnsM="1">
+						<f:content>
+							<Label text="{i18n>formFirstName}" />
+							<Text text="{employeem>FIRSTNAME}" />
+							<Label text="{i18n>formLastName}" />
+							<Text text="{employeem>LASTNAME}" />
+							<Label text="{i18n>formAddress}" />
+							<Text text="{employeem>ADDRESS}" />
+							<Label text="{i18n>formCity}" />
+							<Text text="{employeem>CITY}, {employeem>REGION}" />
+							<Label text="{i18n>formPostalCode}" />
+							<Text text="{employeem>POSTALCODE}" />
+							<Label text="{i18n>formCountry}" />
+							<Text text="{employeem>COUNTRY}" />
+							<Label text="{i18n>formPhoneHome}" />
+							<Text text="{employeem>PHONE}" />
+						</f:content>
+					</f:SimpleForm>
+				</content>
+			</Panel>
+		</content>
+	</Page>
+</mvc:View>

@@ -1,0 +1,14 @@
+<mvc:View 
+	xmlns:html="http://www.w3.org/1999/xhtml" 
+	xmlns:mvc="sap.ui.core.mvc"
+	controllerName="Application.controller.Login"
+	xmlns="sap.m">
+		
+				<VBox fitContainer="true" justifyContent="Center" alignItems="Center" alignContent="Center">
+					<items>
+						<Input id="uname" placeholder="User Name" />
+						<Input id="pasw" placeholder="Password" type="Password" maxLength='40'/>
+						<Button width="12rem" text="Login" type="Emphasized" press="onLoginTap" />
+					</items>
+				</VBox>
+</mvc:View>

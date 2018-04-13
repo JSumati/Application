@@ -1,0 +1,32 @@
+<mvc:View 
+	controllerName="Application.controller.Resume" 
+	xmlns:html="http://www.w3.org/1999/xhtml" 
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m">
+		<Page title = "{i18n>resumeTitle} " showNavButton="true" navButtonPress="onNavBack">
+			<content>
+				<IconTabBar
+					class="sapUiResponsiveContentPadding">
+					
+					<items>
+						
+					<IconTabFilter text="{i18n>hobbies}">
+						<Text text="Information" />
+					</IconTabFilter>
+					
+					<IconTabFilter text="{i18n>Projects}" key="Projects">
+						
+					</IconTabFilter>
+					<IconTabFilter id="hobbiesTab" text="{i18n>Hobbies}" key="Hobbies">
+						<Text text="{Hobbies}" />
+					</IconTabFilter>
+					<IconTabFilter id="notesTab" text="{i18n>Notes}" key="Notes">
+						<Text text="{Notes}" />
+					</IconTabFilter>
+				</items>
+					
+				</IconTabBar>
+				
+			</content>
+		</Page>
+</mvc:View>
