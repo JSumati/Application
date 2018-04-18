@@ -97,6 +97,11 @@
 			},
 			"routes": [
 				{
+					"pattern": "firstPage",
+					"name": "firstPage",
+					"target": "firstPage"
+				},
+				{
 					"pattern": "",
 					"name": "login",
 					"target": "login"
@@ -132,18 +137,28 @@
 					"pattern": "chart",
 					"name": "chart",
 					"target": "chart"
+				},
+				{
+					"pattern": "insertEmp",
+					"name": "insertEmp",
+					"target": "insertEmp"
 				}
 			],
 			"targets": {
+				"firstPage": {
+					"viewId": "firstPage",
+					"viewName": "FirstPage",
+					"viewLevel": 1
+				},
 				"login": {
 					"viewId": "login",
 					"viewName": "Login",
-					"viewLevel": 1
+					"viewLevel": 2
 				},
 				"home": {
 					"viewId": "home",
 					"viewName": "Home",
-					"viewLevel": 2
+					"viewLevel": 3
 				},
 				"notFound": {
 					"viewId": "notFound",
@@ -176,6 +191,11 @@
 				"chart": {
 					"viewId": "chart",
 					"viewName": "Chart"
+				},
+				"insertEmp": {
+					"viewId": "insertEmp",
+					"viewName": "AddEmpToList"
+					
 				}
 			}
 		}

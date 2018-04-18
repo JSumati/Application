@@ -1,0 +1,102 @@
+<mvc:View 
+	xmlns:html="http://www.w3.org/1999/xhtml" 
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:l="sap.ui.layout"
+	controllerName="Application.controller.FirstPage"
+	xmlns="sap.m">
+	<Page title="All about Himalayan Techies Pvt Ltd" >
+		<l:FixFlex class="fixFlexFixedSize" fixContentSize="100%">
+			<l:fixContent>
+			
+			<SlideTile class="sapUiTinyMarginTop" scope="">
+			<tiles>
+				<GenericTile
+					backgroundImage="test-resources/sap/m/demokit/sample/SlideTile/images/NewsImage2.png"
+					frameType="TwoByOne" press="pressOnTileOne">
+					<tileContent>
+						<TileContent footer="August 21, 2016">
+							<content>
+								<NewsContent
+									contentText="SAP Unveils Powerful New Player Comparision Tool Exclusively on NFL.com"
+									subheader="Today, SAP News">
+								</NewsContent>
+							</content>
+						</TileContent>
+					</tileContent>
+				</GenericTile>
+					<GenericTile
+					backgroundImage="test-resources/sap/m/demokit/sample/SlideTile/images/NewsImage2.png"
+					frameType="TwoByOne" press="pressOnTileOne">
+					<tileContent>
+						<TileContent footer="August 21, 2016">
+							<content>
+								<NewsContent
+									contentText="SAP Unveils Powerful New Player Comparision Tool Exclusively on NFL.com"
+									subheader="Today, SAP News">
+								</NewsContent>
+							</content>
+						</TileContent>
+					</tileContent>
+				</GenericTile>
+					<GenericTile
+					backgroundImage="test-resources/sap/m/demokit/sample/SlideTile/images/NewsImage2.png"
+					frameType="TwoByOne" press="pressOnTileOne">
+					<tileContent>
+						<TileContent footer="August 21, 2016">
+							<content>
+								<NewsContent
+									contentText="SAP Unveils Powerful New Player Comparision Tool Exclusively on NFL.com"
+									subheader="Today, SAP News">
+								</NewsContent>
+							</content>
+						</TileContent>
+					</tileContent>
+				</GenericTile>
+					<GenericTile
+					backgroundImage="test-resources/sap/m/demokit/sample/SlideTile/images/NewsImage2.png"
+					frameType="TwoByOne" press="pressOnTileOne">
+					<tileContent>
+						<TileContent footer="August 21, 2016">
+							<content>
+								<NewsContent
+									contentText="SAP Unveils Powerful New Player Comparision Tool Exclusively on NFL.com"
+									subheader="Today, SAP News">
+								</NewsContent>
+							</content>
+						</TileContent>
+					</tileContent>
+				</GenericTile>
+					<GenericTile
+					backgroundImage="test-resources/sap/m/demokit/sample/SlideTile/images/NewsImage2.png"
+					frameType="TwoByOne" press="pressOnTileOne">
+					<tileContent>
+						<TileContent footer="August 21, 2016">
+							<content>
+								<NewsContent
+									contentText="SAP Unveils Powerful New Player Comparision Tool Exclusively on NFL.com"
+									subheader="Today, SAP News">
+								</NewsContent>
+							</content>
+						</TileContent>
+					</tileContent>
+				</GenericTile>
+				<GenericTile
+					backgroundImage="test-resources/sap/m/demokit/sample/SlideTile/images/NewsImage1.png"
+					frameType="TwoByOne" press="pressOnTileTwo">
+					<tileContent>
+						<TileContent footer="August 21, 2016">
+							<content>
+								<NewsContent
+									contentText="Wind Map: Monitoring Real-Time and Forecasted Wind Conditions across the Globe"
+									subheader="Today, SAP News">
+								</NewsContent>
+							</content>
+						</TileContent>
+					</tileContent>
+				</GenericTile>
+			</tiles>
+			</SlideTile> 
+		</l:fixContent>
+		</l:FixFlex>
+	</Page>
+</mvc:View>

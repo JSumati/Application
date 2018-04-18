@@ -1,0 +1,39 @@
+<mvc:View
+   xmlns="sap.m"
+   xmlns:mvc="sap.ui.core.mvc"
+   controllerName="Application.controller.EmployeeList"
+   xmlns:l="sap.ui.layout"
+   xmlns:f="sap.ui.layout.form"
+   xmlns:core="sap.ui.core">
+   <Page title="{i18n>employeeListPageTitle}" showNavButton="true" navButtonPress="onNavBack">
+   	<content>
+   		<f:SimpleForm id="idCreateUserForm" minWidth="1024" 
+   					  editable="true" 
+   					  layout="ResponsiveGridLayout" 
+					  labelSpanL="3" labelSpanM="3"  
+					  emptySpanL="4" emptySpanM="4" columnsL="1" 
+					  columnsM="1" class="editableForm">
+   			<f:content >
+   							<Label />
+							<Input id="addusername" placeholder="First Name" />
+							<Label />
+							<Input id="adduserlastname" placeholder="Last Name" />
+							<Label />
+							<Input id="addaddress" placeholder="Address" />
+							<Label />
+							<Input id="addcity" placeholder="City" />
+							<Label />
+							<Input id="addregion" placeholder="Region" />
+							<Label />
+							<Input id="addpostal" placeholder="Postal Code" />
+							<Label />
+							<Input id="addcountry" placeholder="Country" />
+							<Label />
+							<Input id="addphone" placeholder="Phone Number" />
+							<Label />
+							<Button width="12rem" text="Add" type="Emphasized" press="onAdd" />
+			</f:content>
+		</f:SimpleForm>
+	</content>
+    </Page>
+</mvc:View>

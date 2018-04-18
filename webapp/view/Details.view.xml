@@ -22,7 +22,7 @@
 					<Toolbar>
 						<Title text="{i18n>employeeIDColon} {employeem>EMPLOYEEID}" />
 						<ToolbarSpacer />
-						<!--<Link text="Resume of {employeem>FIRSTNAME}" tooltip="{i18n>FlipToResume.tooltip}" press="onShowResume" />-->
+						<Button  width="5rem" tooltip="Update Details"  icon="sap-icon://user-edit"  type="Emphasized" press="onUpDetail" />
 					</Toolbar>
 				</headerToolbar>
 				<content>

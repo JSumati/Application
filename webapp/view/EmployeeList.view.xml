@@ -3,6 +3,10 @@
    xmlns:mvc="sap.ui.core.mvc"
    controllerName="Application.controller.EmployeeList">
 	<Page title="{i18n>employeeListPageTitle}" showNavButton="true" navButtonPress="onNavBack">
+		<HeaderContainer>
+		<Button  width="5rem" tooltip="Add Employee to the List"  icon="sap-icon://add-employee"  type="Emphasized" press="addEmp" />
+		<Button  width="5rem" tooltip="Remove Employee From the List"  icon="sap-icon://delete"  type="Emphasized" press="remEmp" />
+		</HeaderContainer>
 		<content>
 		   <List
 			  id="list"
@@ -19,7 +23,7 @@
 			<Toolbar>
 				<Title  id="title" text="{i18n>employeeListTitle}"  />
 					<ToolbarSpacer/>
-					<SearchField width="50%" id="search" search="onFilterEmployees"/>
+					<SearchField width="50%" id="search" search="onFilterEmployees" />
 			</Toolbar>
 			</headerToolbar>
 		      <items>
@@ -32,5 +36,6 @@
 		      </items>
 		   </List>
    </content>
+  
    </Page>
 </mvc:View>
